@@ -20,7 +20,7 @@ public class Application {
 
 
         //...............................Q2) CRUD operation on Author
-
+        SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
         Author author=new Author();
         Address address=new Address();
 
@@ -36,7 +36,7 @@ public class Application {
         author.setFirstName("Akash");  //.....................CREATE
         author.setLastName("Gupta");
         author.setDob(new Date(27/02/1997));  //Added new column
-        System.out.println(author.getDob());
+        System.out.println(format.parse("1998/08/12"));
         author.setAge(21);
         address.setStreetNumber("224/59");
         address.setLocation("Lucknow");
@@ -77,7 +77,7 @@ public class Application {
 
         author1.setFirstName("Abhishek");
         author1.setLastName("Sharma");
-        author1.setDob(new Date(25/12/1989));  // Q3) Added new column dob
+        author1.setDob(format.parse("1998/08/11"));  // Q3) Added new column dob
         author1.setAge(25);
         address1.setStreetNumber("22B");
         address1.setLocation("Baker Street");
@@ -133,8 +133,8 @@ public class Application {
         author2.setFirstName("Mayank");
         author2.setLastName("Gupta");
         author2.setAge(22);
-        Date ob1 =new Date(12/7/1998);
-        author2.setDob(ob1);
+    
+        author2.setDob(format.parse("1998/08/10"));
         address2.setStreetNumber("23");
         address2.setLocation("Latus Road");
         address2.setState("JK");
@@ -171,7 +171,7 @@ public class Application {
         author3.setFirstName("Prerit");
         author3.setLastName("Singh");
         author3.setAge(24);
-        author3.setDob(new Date(11/11/1996));
+        author3.setDob(format.parse("1998/08/02"));
         address3.setStreetNumber("21B");
         address3.setLocation("Baker Marg");
         address3.setState("HP");
@@ -211,7 +211,7 @@ public class Application {
         author4.setFirstName("Swapnil");
         author4.setLastName("Verma");
         author4.setAge(22);
-        author4.setDob(new Date(11/10/1984));
+        author4.setDob(format.parse("1998/08/21"));
         address4.setStreetNumber("231");
         address4.setLocation("Baker");
         address4.setState("KP");
@@ -251,7 +251,7 @@ public class Application {
         author5.setFirstName("Saurabh");
         author5.setLastName("Singh");
         author5.setAge(28);
-        author5.setDob(new Date(11/9/1999));
+        author5.setDob(format.parse("1998/08/22"));
         address5.setStreetNumber("231");
         address5.setLocation("Baker");
         address5.setState("KP");
@@ -284,7 +284,7 @@ public class Application {
 
         author.setFirstName("Akash");
         author.setLastName("Gupta");
-        author.setDob(new Date(27/02/1997));
+        author.setDob(format.parse("1998/08/12"));
         System.out.println(author.getDob());
         author.setAge(21);
         address.setStreetNumber("224/59");
@@ -317,7 +317,7 @@ public class Application {
 
         author1.setFirstName("Abhishek");
         author1.setLastName("Sharma");
-        author1.setDob(new Date(25/12/1989));
+        author1.setDob(format.parse("1998/08/02"));
         author1.setAge(25);
         address1.setStreetNumber("22B");
         address1.setLocation("Baker Street");
